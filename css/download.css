@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500');
+   
+button:focus {outline:0;}
+    .coolass_button{
+        width: 250px;
+        height: 100px;
+        background: linear-gradient(to right, #8365c1 0%,#8365c1 50%,#7bff56 50%,#7bff56 100%);
+        background-size: 200%;
+        border-radius: 5px;
+        border:none;
+        display: block;
+        margin: auto;
+        position: relative;
+        transition: all .5s;
+        overflow: hidden;
+        color: rgba(103, 55, 204, 0.67);
+        cursor: pointer;
+        font-weight: 500;
+        margin-top: 0px;
+    will-change:all;
+    transition-timing-function:ease;
+    }
+    .coolass_button:hover{
+        box-shadow: 0px 6px 10px
+    }
+    .coolass_button_first{
+        background-position: 100%;
+        height: 30px;
+    transform:translateY(50px);
+        color:transparent;
+    }
+    .coolass_button_bridge1{
+        background: #7bff56;
+        background-position: 0%;
+        transition: none; 
+    }
+    .coolass_button_second{
+        background: linear-gradient(to right, #7bff56 0%,#7bff56 50%,#7bff56 50%,#63bc40 50%,#63bc40 50%,#63bc40 100%);
+        background-size: 200%;
+        transition: all 1.2s;
+    }
+    .coolass_button_third{
+        background-position: -100%;
+    }
+    .coolass_button_final{
+        transition: all .5s;
+        margin-top: 0px;
+        height: 100px;
+    transform:translateY(0px);
+        color:rgba(62, 117, 41, 0.61);
+    }
+    .coolass_button:after{
+        content: 'Success!';
+        position: absolute;
+        right: -100%;
+        opacity: 0;
+        width: 100%;
+        top:35%;
+        margin: 0px;
+        color: white;
+        font-size: 2em;
+        transition: all .5s;
+    }
+    .coolass_button_final:after{
+        right: 0%;
+        opacity: 1;
+    }
+    .coolass_button:before{
+        content: 'Download';
+        position: absolute;
+        left: 0%;
+        width: 100%;
+        top:35%;
+        margin: 0px;
+        color: white;
+        font-size: 2em;
+        transition: all .5s;
+    }
+    .coolass_button_first:before{
+        left: -100%;
+        opacity: 0;
+    }
+
+.cool_holder{
+  height:100px;
+}
